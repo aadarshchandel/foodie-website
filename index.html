@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <h1>🍴 Foodie</h1>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- NAV LINKS -->
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="admin.html">Admin</a>
+        <a href="auth.html">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Foodie 🍛</h2>
+    <p>Explore delicious Indian foods</p>
+</section>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h2>Delicious Indian Food 🍛</h2>
+    <p>Order your favorite meals anytime</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- MENU SECTION -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu" id="menuList"></div>
+    </section>
+
+    <!-- ADMIN PANEL -->
+    <section id="admin" class="hidden">
+        <h2>Admin Panel</h2>
+
+        <input type="text" id="foodName" placeholder="Food Name">
+        <input type="number" id="foodPrice" placeholder="Price ₹">
+        <input type="text" id="foodRating" placeholder="Rating ⭐">
+
+        <br><br>
+
+        <button onclick="addFood()">Add Food</button>
+        <button onclick="deleteFood()">Delete Last</button>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <h3>About Foodie</h3>
+    <p>
+        Foodie is a simple and interactive food ordering website where users can explore
+        Indian dishes with ratings, prices, and order options.
+    </p>
+
+    <h3>Contact Us</h3>
+    <p>Email: foodie@gmail.com | Phone: +91 9876543210</p>
+</footer>
+
+<!-- JAVASCRIPT FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>

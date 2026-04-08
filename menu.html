@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foodie - Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h1>🍴 Foodie</h1>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- NAV LINKS -->
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="admin.html">Admin</a>
+        <a href="auth.html">Login</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Our Menu</h2>
+    <div class="menu" id="menuList"></div>
+</div>
+<script>
+if (!localStorage.getItem("isLoggedIn")) {
+    alert("Please login first!");
+    window.location.href = "login.html";
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

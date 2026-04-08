@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel - Foodie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-body">
+
+<header class="navbar">
+    <h1>🍴 Foodie</h1>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- NAV LINKS -->
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="admin.html">Admin</a>
+        <a href="auth.html">Login</a>
+    </nav>
+</header>
+<div class="admin-container">
+
+    <!-- FORM -->
+    <div class="admin-card">
+        <h2>Add Food Item</h2>
+
+        <input type="text" id="foodName" placeholder="Food Name">
+        <input type="number" id="foodPrice" placeholder="Price ₹">
+        <input type="text" id="foodRating" placeholder="Rating ⭐">
+
+        <button onclick="addFood()">➕ Add Food</button>
+        <button onclick="deleteFood()" class="delete-btn">❌ Delete Last</button>
+    </div>
+
+    <!-- PREVIEW -->
+    <div class="admin-card">
+        <h2>Food Preview</h2>
+        <div id="menuList" class="menu"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

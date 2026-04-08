@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>🧾 Checkout</h2>
+
+    <div id="checkoutItems"></div>
+
+    <h3>Total: ₹<span id="checkoutTotal">0</span></h3>
+
+    <button onclick="placeOrder()">Place Order</button>
+</div>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cartData")) || [];
+
+let container = document.getElementById("checkoutItems");
+let total = 0;
+
+cart.forEach(item => {
+    total += item.price;
+
+    container.innerHTML += `
+    <p>${item.name} - ₹${item.price}</p>
+    `;
+});
+
+document.getElementById("checkoutTotal").innerText = total;
+
+function placeOrder() {
+    alert("✅ Order Placed Successfully!");
+    localStorage.removeItem("cartData");
+    window.location.href = "menu.html";
+}
+</script>
+
+</body>
+</html>
