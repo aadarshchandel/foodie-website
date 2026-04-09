@@ -1,13 +1,33 @@
 // ================= FOOD DATA =================
 
+// ================= FOOD DATA =================  
+
 let foods = [
     {name:"Pizza", price:250, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1600891964599-f61ba0e24092"},
     {name:"Burger", price:120, rating:"⭐⭐⭐", img:"https://images.unsplash.com/photo-1550547660-d9450f859349"},
     {name:"Dosa", price:80, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1589308078059-be1415eab4c3"},
     {name:"Idli", price:60, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1626074353765-517a681e40be"},
-    {name:"Paneer", price:220, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1631452180519-c014fe946bc7"},
+    {name:"Paneer Tikka", price:220, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1604909052743-94e838986d24"},
     {name:"Biryani", price:200, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1604908176997-125f25cc6f3d"},
-    {name:"Samosa", price:20, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1601050690597-df0568f70950"}
+    {name:"Samosa", price:20, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1601050690597-df0568f70950"},
+    {name:"Jalebi", price:100, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1630409346824-4f0e7b080087"},
+    {name:"Poha", price:50, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1625944230935-1c5c0c2e8c9d"},
+    {name:"Vada Pav", price:40, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1606755962773-d324e2b67f73"},
+    {name:"Chole Bhature", price:150, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1626132647523-66a1d8e9a8d5"},
+    {name:"Pav Bhaji", price:130, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1626078299035-5c1b5a7c3c7a"},
+    {name:"Kachori", price:30, rating:"⭐⭐⭐", img:"https://images.unsplash.com/photo-1627308594190-a1a0f7b86a23"},
+    {name:"Dal Tadka", price:140, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1625944525903-b6f5dc9d6b4d"},
+    {name:"Roti", price:20, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1617196034183-421b4917c92d"},
+    {name:"Fried Rice", price:160, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1603133872878-684f208fb84b"},
+    {name:"Noodles", price:140, rating:"⭐⭐⭐", img:"https://images.unsplash.com/photo-1617191519005-8e3f6c7a7f77"},
+    {name:"Ice Cream", price:90, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1563805042-7684c019e1cb"},
+    {name:"Gulab Jamun", price:80, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1601050690117-94f5f6fa4c3d"},
+    {name:"Rasgulla", price:90, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"},
+    {name:"Tea", price:20, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93"},
+    {name:"Coffee", price:40, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93"},
+    {name:"Masala Dosa", price:100, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1631452180519-c014fe946bc7"},
+    {name:"Rajma Chawal", price:120, rating:"⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1604909052743-94e838986d24"},
+    {name:"Pani Puri", price:50, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1625944525903-b6f5dc9d6b4d"}
 ];
 
 // ================= DISPLAY MENU =================
