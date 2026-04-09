@@ -1,10 +1,4 @@
-// SHOW USER NAME
-if (window.location.pathname.includes("menu.html")) {
-    let name = localStorage.getItem("userName");
-    if (name) {
-        document.getElementById("welcomeUser").innerText = "Welcome, " + name + " 👋";
-    }
-}
+
 // LOGIN SYSTEM
 let loggedIn = false;
 
@@ -127,19 +121,6 @@ function logoutUser() {
 }
 
 
-// 🔐 PROTECT MENU PAGE
-if (window.location.pathname.includes("menu.html")) {
-    let isLoggedIn = localStorage.getItem("isLoggedIn");
-
-    if (!isLoggedIn) {
-        alert("❌ Please login first!");
-        window.location.href = "login.html";
-    }
-}
-
-
-
-
     // 🔥 Redirect to MENU PAGE
     window.location.href = "menu.html";
 }
@@ -152,9 +133,6 @@ function logoutUser() {
     localStorage.removeItem("isLoggedIn");
 
     alert("👋 Logged Out Successfully!");
-
-    // Redirect to login page
-    window.location.href = "login.html";
 }
 
 
