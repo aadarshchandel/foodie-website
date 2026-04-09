@@ -1,4 +1,3 @@
-
 // LOGIN SYSTEM
 let loggedIn = false;
 
@@ -16,11 +15,6 @@ function logout() {
 function showSection(section) {
     document.getElementById('menu').classList.add('hidden');
     document.getElementById('admin').classList.add('hidden');
-
-    if (section === 'admin' && !loggedIn) {
-        alert("❌ Please login first!");
-        return;
-    }
 
     document.getElementById(section).classList.remove('hidden');
 }
