@@ -200,8 +200,8 @@ function toggleCart() {
 function goToCheckout() {
     localStorage.setItem("cartData", JSON.stringify(cart));
     window.location.href = "checkout.html";
+"checkout.html";
 }
-
 
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
