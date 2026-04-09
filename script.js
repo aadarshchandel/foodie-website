@@ -4,15 +4,7 @@ if (window.location.pathname.includes("menu.html")) {
     if (name) {
         document.getElementById("welcomeUser").innerText = "Welcome, " + name + " 👋";
     }
-}// 🔐 PROTECT MENU PAGE (ADD THIS AT TOP)
-
-if (window.location.pathname.includes("menu.html")) {
-    if (!localStorage.getItem("isLoggedIn")) {
-        alert("❌ Please login first!");
-        window.location.href = "auth.html";
-    }
 }
-
 // LOGIN SYSTEM
 let loggedIn = false;
 
@@ -122,44 +114,6 @@ function toggleForm() {
 
 
 
-// SIGNUP
-function handleSignup() {
-    let name = document.getElementById("signupName").value;
-    let email = document.getElementById("signupEmail").value;
-    let password = document.getElementById("signupPassword").value;
-
-    if (!name || !email || !password) {
-        alert("❌ Fill all fields!");
-        return;
-    }
-
-    localStorage.setItem("userName", name); // ✅ store name
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userPassword", password);
-    localStorage.setItem("isLoggedIn", "true");
-
-    window.location.href = "menu.html";
-}
-
-
-// LOGIN
-function handleLogin() {
-    let email = document.getElementById("loginEmail").value;
-    let password = document.getElementById("loginPassword").value;
-
-    let savedEmail = localStorage.getItem("userEmail");
-    let savedPassword = localStorage.getItem("userPassword");
-
-    if (email === savedEmail && password === savedPassword) {
-        localStorage.setItem("isLoggedIn", "true");
-
-        alert("✅ Login Successful!");
-        window.location.href = "menu.html";
-    } else {
-        alert("❌ Invalid credentials!");
-    }
-}
-
         // 🔥 REDIRECT (VERY IMPORTANT)
         window.location.href = "menu.html";
 
@@ -184,53 +138,13 @@ if (window.location.pathname.includes("menu.html")) {
 }
 
 
-// ✅ SIGNUP FUNCTION
-function handleSignup() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
 
-    if (!name || !email || !password) {
-        alert("❌ Please fill all fields!");
-        return;
-    }
-
-    // Save user data
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userPassword", password);
-
-    // IMPORTANT: Auto login after signup
-    localStorage.setItem("isLoggedIn", "true");
-
-    alert("✅ Signup Successful!");
 
     // 🔥 Redirect to MENU PAGE
     window.location.href = "menu.html";
 }
 
 
-// ✅ LOGIN FUNCTION
-function handleLogin() {
-    let email = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-
-    let savedEmail = localStorage.getItem("userEmail");
-    let savedPassword = localStorage.getItem("userPassword");
-
-    if (email === savedEmail && password === savedPassword) {
-
-        // Save login status
-        localStorage.setItem("isLoggedIn", "true");
-
-        alert("✅ Login Successful!");
-
-        // 🔥 Redirect to MENU PAGE
-        window.location.href = "menu.html";
-
-    } else {
-        alert("❌ Invalid Email or Password!");
-    }
-}
 
 
 // ✅ LOGOUT FUNCTION
