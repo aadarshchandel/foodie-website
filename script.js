@@ -1,5 +1,3 @@
-// ================= FOOD DATA =================
-
 // ================= FOOD DATA =================  
 
 let foods = [
@@ -30,11 +28,11 @@ let foods = [
     {name:"Pani Puri", price:50, rating:"⭐⭐⭐⭐⭐", img:"https://images.unsplash.com/photo-1625944525903-b6f5dc9d6b4d"}
 ];
 
+
 // ================= DISPLAY MENU =================
 
 function displayMenu() {
     let menuList = document.getElementById("menuList");
-
     if (!menuList) return;
 
     menuList.innerHTML = "";
@@ -92,12 +90,6 @@ function updateCart() {
 
     count.innerText = cart.length;
     totalPrice.innerText = total;
-}
-
-// ================= NAVBAR =================
-
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
 }
 
 // ================= INIT =================
